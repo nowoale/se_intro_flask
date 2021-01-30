@@ -1,15 +1,15 @@
 from flask import Flask
 app = Flask(__name__)
 
-moje_imie = 'Natalia'
+imie = 'Ola'
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World ' + moje_imie + ' !'
+    return 'Hello, World ' + imie + ' !'
 
 @app.route('/kto')
-def kto():
-    return moje_imie
+def co():
+    return imie
 
 
 @app.route('/wiadomosc')
